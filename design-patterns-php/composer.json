@@ -1,0 +1,23 @@
+{
+  "name": "learning/design-patterns-php",
+  "description": "Practical PHP 8.2+ design pattern examples for backend and Laravel developers.",
+  "type": "project",
+  "license": "MIT",
+  "require": {
+    "php": "^8.2"
+  },
+  "autoload": {
+    "psr-4": {
+      "DesignPatterns\\": "src/"
+    }
+  },
+  "scripts": {
+    "lint": "find src examples -name '*.php' -print -exec php -l {} \\;",
+    "smoke": "php examples/run-all.php",
+    "test": [
+      "@lint",
+      "@smoke"
+    ],
+    "run:all": "php examples/run-all.php"
+  }
+}

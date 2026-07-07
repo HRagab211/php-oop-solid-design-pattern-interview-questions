@@ -1,0 +1,30 @@
+# Composer
+/vendor/
+/composer.lock
+
+# Environment and local overrides
+.env
+.env.*
+!.env.example
+
+# Runtime output
+*.log
+*.cache
+/storage/
+/tmp/
+/coverage/
+
+# IDE/editor files
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Frontend dependencies/build output if the repo is extended later
+/node_modules/
+/dist/
+/build/
