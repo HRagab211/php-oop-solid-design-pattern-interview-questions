@@ -17,6 +17,7 @@ The project is intentionally framework-free. It does not require a Laravel insta
 - PSR-4 autoloading through Composer.
 - Fallback autoloader for running examples before Composer is installed.
 - Interview-focused documentation for PHP, Laravel, SOLID, SQL, and design-pattern questions.
+- Dedicated [SOLID principles guide](solid/README.md) with runnable PHP examples.
 - GitHub Actions workflow for Composer validation, PHP syntax checks, and example smoke runs.
 
 ## Tech Stack
@@ -121,6 +122,7 @@ php examples/run-all.php
 | `composer validate --no-check-publish` | Validate Composer metadata |
 | `composer test` | Run lint checks and all smoke examples |
 | `composer run:all` | Run every pattern example |
+| `composer solid` | Run all SOLID principle examples |
 | `php examples/run-all.php` | Run every pattern example directly |
 
 ## Project Structure
@@ -151,6 +153,9 @@ design-patterns-php/
 │   ├── Behavioral/
 │   ├── Creational/
 │   └── Structural/
+├── solid/
+│   ├── examples/
+│   └── README.md
 ├── .env.example
 ├── .gitignore
 ├── composer.json
@@ -167,6 +172,7 @@ Folder responsibilities:
 | `src/Behavioral` | Strategy, Observer, Command, Chain of Responsibility, Template Method, State, Iterator, Mediator, Specification |
 | `src/Architectural` | Repository, Service Layer, Action Class, DTO, Value Object, Domain Event, Query Object |
 | `examples/` | Runnable CLI examples for each pattern |
+| `solid/` | Detailed SOLID principles guide with runnable PHP examples |
 | `docs/` | Installation, architecture, features, interview notes, and repository review documentation |
 | `.github/workflows` | CI workflow for validation and smoke checks |
 
